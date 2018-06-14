@@ -1,0 +1,49 @@
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+/**
+ * Fonts
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$lato: 'Lato', sans-serif;
+
+/**
+ * Cores
+ */
+$branco: #fff;
+$preto: #000;
+$azul: #105074;
+$amarelo: #f8cb0e;
+$amareloHover: #d0c602;
+$grafite: #424c55;
+$cinza: #f9f9f9;
+$vermelho: #ed1c24;
+$vermelhoHover: #bc171d;
+$roxo: #7b479c;
+$roxoHover: #6d249b;
+
+/*Functions*/
+
+$browser-context: 16;
+@function rem($pixels, $context: $browser-context) {
+	@return #{$pixels/$context}rem;
+}
+
+/*Mixins*/
+@mixin boxShadow ($color: #2e2d2e) {
+	-webkit-box-shadow: inset 0px 0px 5px 0px $color;
+	-moz-box-shadow: inset 0px 0px 5px 0px $color;
+	box-shadow: inset 0px 0px 5px 0px $color;
+}
+
+@mixin transition {
+  transition: all .4s ease;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
