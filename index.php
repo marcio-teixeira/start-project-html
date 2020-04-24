@@ -18,7 +18,7 @@ require('inc/globals.php'); // Require in all pages
         <?php include 'inc/header.php'; ?>
         <div id="page">
             <div class="conteudo">
-
+                teste 2
             </div>
             <?php include 'inc/footer.php'; ?>
         </div>
